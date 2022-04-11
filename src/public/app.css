@@ -1,0 +1,598 @@
+body{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.section__header{
+    width: 35%;
+    height: 150vh;
+    background-color: lightsalmon;
+}
+
+.container{
+   max-width: 1440px;
+   margin: 0 auto;
+   padding: 0 10px;
+   height: 100vh;
+}
+
+.header__wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.container__header{
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+.header__img{
+    margin-left: 20px;
+}
+
+.head{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.headers__head{
+    position: relative;
+    top: 20px;
+    left: 800px;
+}
+
+.wrapper__header{
+    border-bottom: 2px solid #000;
+    padding-bottom: 30px;
+    background-color:rgb(243, 187, 165);
+}
+
+.form{
+    width: 55%;
+    min-height: 50vh;
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 5px rgba(6, 132, 154, 0.74);
+    margin: 0 auto;
+    margin-top: 50px; 
+}
+
+.input__box{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.label{
+    font-size: 25px;
+    font-weight: bolder;
+    color: #333;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+.input{
+    width: 90%;
+    padding: 12px;
+    margin: 0 auto;
+    font-size: 22px;
+    font-weight: bold;
+    color: #555;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-left: 2px solid #000;
+}
+
+.input__wrapper{
+    display: flex;
+    box-shadow: 0 0 10px 2px rgba(6, 132, 154, 0.74);
+    border: 2px solid #222;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+.bxs-user{
+    font-size: 35px;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+.bxs-lock-alt{
+    font-size: 35px;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+.form__btn{
+    width: 30%;
+    min-height: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: royalblue;
+    color: aliceblue;
+    border-radius: 10px;
+    border: 2px solid #333;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    cursor: pointer;  
+}
+
+.form__btn:hover{
+   transform: scale(1.1);
+   transition: all 1s ease-in-out;
+}
+
+.select__teacher{
+    width: 360px;
+    height: 45px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #000;
+}
+
+.selecter{
+    width: 360px;
+    height: 45px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #000;
+}
+
+.selecter__select{
+    width: 360px;
+    height: 45px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #000;
+}
+
+.selecter__select2{
+    width: 360px;
+    height: 45px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #000;
+    margin-top: 20px;
+}
+
+span{
+    color: tomato;
+}
+
+.header{
+    font-size: 50px;
+    width: 600px;
+    margin-top: 100px;
+    font-weight: bold;
+}
+
+.section{
+    display: flex;
+}
+
+
+.wrapper{
+    display: flex;
+}
+
+.headers__head{
+    font-size: 30px;
+    font-weight: bold;
+    color: #222;
+}
+
+.bx-menu{
+    font-size: 35px;
+}
+
+.btn__link{
+    text-decoration: none;
+    color: #000;
+    position: relative;
+    left: 200px;
+}
+
+.bxs-user-rectangle{
+    font-size: 30px;
+    transform: translateY(5px);
+}
+
+
+.list{
+    list-style: none;
+    margin-left: 10px;
+}
+
+.item{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+    width: 100%;
+    padding: 5px;
+    border-radius: 10px;
+    display: flex;
+    border: 2px solid #000;
+    background-color: aliceblue;
+}
+
+.item:hover{
+    width: 300px;
+    border: 2px solid #000;
+    box-shadow: 0 0 10px 1px rgb(50, 50, 50);
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all 1s ease-in-out;
+}
+
+.imgs{
+    margin-right: 20px;
+}
+
+.imgs1{
+    margin-right: 15px;
+    margin-left: 7px;
+}
+
+.div{
+    height: 800px;
+    background-color: #000;
+    position: relative;
+    right: 350px;
+}
+
+.button{
+    border: 2px solid #000;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 15px;
+    margin-top: 30px;
+    margin-left: 400px;
+}
+
+.link{
+    text-decoration: none;
+    color: #000;
+}
+
+.button:hover{
+    transform: scale(1.1);
+    transition: all 1s ease-in-out;
+}
+
+.button__head{
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    border-bottom: 2px solid #000;
+    padding-bottom: 10px;
+}
+
+.input__wrapp{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form__input{
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 10px;
+
+}
+
+.form__label{
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.btn1{
+    border:  2px solid #000;
+    width: 100%;
+    height: 45px;
+    background-color: steelblue;
+    border-radius: 10px;
+    margin-top: 20px;
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 900px) {
+    .main{
+        flex-direction: column;
+    }
+
+    .div{
+        display: none;
+    }
+}
+
+
+/* teacher */
+
+.sidebar{
+    width: 800px;
+}
+
+.sidebar__list{
+    width: 850px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    font-size: 25px;
+    font-style: normal;
+    background-color: rgb(248, 136, 116);
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 20px;
+}
+
+.sidebar__item{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.sidebar__head{
+    margin-top: 30px;
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+/* courses */
+
+.course__wrapper{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.course{
+    width: 250px;
+    padding: 10px;
+    border: 2px solid #000;
+    background-color: rgb(235, 164, 151);
+    border-radius: 20px;
+    margin-bottom: 20px;
+    margin-right: 25px;
+    box-shadow: 0 0 10px 5px sandybrown;
+}
+
+.course:last-child{
+    margin-right: 0;
+}
+
+.course:hover{
+    transform: scale(1.1);
+    transition: all 1s ease-in-out;
+}
+
+.course__name{
+    font-weight: bolder;
+}
+
+.corse__price{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.course__teacher{
+    font-weight: bolder;
+}
+
+.box{
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #000;
+    padding-bottom: 15px;
+}
+
+.headerim{
+    font-size: 35px;
+    font-weight: bold;
+    margin-left: 30px;
+}
+
+
+/* teachers */
+
+.teachers{
+    width: 850px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #000;
+    background-color: wheat;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.techer__id{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.teacher__name{
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.teacher__number{
+    font-size: 20px;
+    font-weight: bolder;
+    margin-right: 25px;
+    padding-top: 5px;
+}
+
+.select{
+   width: 362px;
+   padding: 10px;
+   border-radius: 10px;
+   border:  2px solid #000;
+   margin-bottom: 20px;
+}
+
+.select__head{
+    font-size: 25px;
+    font-weight: bold;
+
+}
+
+
+/* groups */
+
+.groups{
+    width: 850px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #000;
+    background-color: wheat;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+
+.group__name{
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.course2__name{
+    font-size: 20px;
+    font-weight: bolder;
+    margin-left: 70px;
+}
+
+.group__teacher{
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.h4{
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+/* pupils */
+
+.Pupils{
+    width: 850px;
+}
+
+.pupils__list{
+    width: 850px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    font-size: 25px;
+    font-style: normal;
+    background-color: rgb(248, 136, 116);
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 20px;
+}
+
+.pupils{
+    width: 850px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #000;
+    background-color: wheat;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.pupil__id{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.pupil__name{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.pupil__number{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.pupil__group{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.none{
+    display: none;
+}
+
+.id{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.group__name2{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 40px;
+}
+
+.pupil__number{
+    font-size: 20px;
+    font-weight: bold;    
+}
+
+
+
+
+.teacher{
+    width: 850px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #000;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgb(240, 172, 160);
+}
+
+.group__name{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.group__course{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 50px;
+}
+
+.group__user{
+    font-size: 20px;
+    font-weight: bold;
+}

@@ -1,0 +1,89 @@
+[
+    {
+        "id": 1,
+        "username": "Shahzodbek",
+        "password": "123456",
+        "role": "admin",
+        "phoneNumber": "+998915464545"
+    },
+    {
+        "id": 2,
+        "username": "Saud Abdulvahed",
+        "password": "909909",
+        "role": "teacher",
+        "courseName": "Flutter",
+        "phoneNumber": "+99891548585"
+    },
+    {
+        "id": 3,
+        "username": "Baxtiyor Teshayev",
+        "password": "909909",
+        "role": "teacher",
+        "courseName": "Web dasturlash",
+        "phoneNumber": "+99891548585"
+    },
+    {
+        "id": 4,
+        "username": "Saidbek",
+        "password": "121212",
+        "role": "pupil",
+        "phoneNumber": "+99891457878",
+        "groupName": "n17-Web"
+    },
+    {
+        "id": 5,
+        "username": "Shahzodbek",
+        "role": "teacher",
+        "phoneNumber": "91 517 97 00",
+        "password": "eshmatqw",
+        "courseName": " C tili"
+    },
+    {
+        "id": 6,
+        "username": "Saud",
+        "role": "teacher",
+        "phoneNumber": "91 517 97 00",
+        "password": "123456",
+        "courseName": " abdullakani kursin"
+    },
+    {
+        "id": 7,
+        "username": "Shahzodbek",
+        "password": "123456",
+        "role": "pupil",
+        "phoneNumber": "91 517 97 00",
+        "groupName": "n1-14"
+    },
+    {
+        "id": 8,
+        "username": "Muzaffar",
+        "password": "eshmat",
+        "role": "pupil",
+        "phoneNumber": "91 517 00 00",
+        "groupName": "n1-14"
+    },
+    {
+        "id": 9,
+        "username": "Odilbek",
+        "password": "909909",
+        "role": "pupil",
+        "phoneNumber": "91 517 97 88",
+        "groupName": "n18-T"
+    },
+    {
+        "id": 10,
+        "username": "Zafar",
+        "role": "teacher",
+        "phoneNumber": "91 517 97 74",
+        "password": "1212",
+        "courseName": " .net"
+    },
+    {
+        "id": 11,
+        "username": "Odilbek",
+        "password": "toshmatww1321",
+        "role": "pupil",
+        "phoneNumber": "91 517 00 00",
+        "groupName": "n1-14"
+    }
+]

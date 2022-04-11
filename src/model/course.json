@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "courseName": "Web dasturlash",
+        "title": "Kurs 7oy davom etadi. Kurs davomida siz oziz uchun potofilolar qiliub borasiz",
+        "teacher": "Akbarjon ustoz",
+        "price": "500 000"
+    },
+    {
+        "id": 2,
+        "courseName": "C tili",
+        "title": "Kurs 4oy davom etadi. Kurs davomida siz algoritim buyicha muammolarga yechim topishni o'rganasiz",
+        "teacher": "Alisher kasimov",
+        "price": "1000 000"
+    },
+    {
+        "id": 3,
+        "courseName": "Flutter",
+        "title": "Kurs 6oy davom etadi. Kurs davomida siz android va ois mobillariga applar tayyorlaysiz.",
+        "teacher": "Saud Abdulvahed",
+        "price": "1200 000"
+    },
+    {
+        "id": 4,
+        "courseName": "SMM",
+        "title": "Bu kurmiz 6oy davom etadi. Kurs davomida siz SMS bo'yicha ko'p malumotga ega bo'lasiz\r\n",
+        "teacher": "Ozod Amirillaye",
+        "price": "120000"
+    },
+    {
+        "id": 5,
+        "courseName": ".net",
+        "title": "bir nima",
+        "teacher": "hakim",
+        "price": "10"
+    }
+]

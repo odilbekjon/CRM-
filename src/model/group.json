@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "groupName": "n1-14",
+        "courseName": "Web dasturlash",
+        "username": "Akbar aka"
+    },
+    {
+        "id": 2,
+        "groupName": "n18-T",
+        "courseName": "Flutter",
+        "username": "Shahzodbek"
+    },
+    {
+        "id": 3,
+        "groupName": "n20-T",
+        "courseName": "Flutter",
+        "username": "Saud Abdulvahed"
+    },
+    {
+        "id": 4,
+        "groupName": "n18-T",
+        "courseName": "Web dasturlash",
+        "username": "Baxtiyor Teshayev"
+    }
+]

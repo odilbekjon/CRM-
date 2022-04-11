@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="app.css">
+    <title>Admin</title>
+</head>
+<body>
+    
+    <section class="section">
+        <section class="section__header">
+            <header class="headers">
+                <div class="header__wrapper">
+                    <h1 class="container__header">Najot talim</h1>
+                </div>
+                <ul class="list">
+                    <li class="item" id="teachers-btn"><img class="imgs1" src="http://localhost:5000/imgs/teacher.png" width="40" alt="">O'qituvchilar</li>
+                    <li class="item" id="students-btn"><img class="imgs" src="http://localhost:5000/imgs/boy.png" width="40" alt="">O'quvchilar</li>
+                    <li class="item" id="groups-btn"><img class="imgs" src="http://localhost:5000/imgs/group.png" width="40" alt="">Guruhlar</li>
+                    <li class="item" id="courses-btn"><img class="imgs" src="http://localhost:5000/imgs/online-learning.png" width="40" alt="">Kurslar</li>
+                </ul>
+            </header>
+        </section>
+        <div class="container">
+            <div class="wrapper__header">
+                <h2 class="headers__head"><i class='bx bxs-user-rectangle'></i> System Admin</h2>
+            </div>
+
+            <!-- Teachers  page -->
+            <div class="teachers-list">
+              <div class="box " >
+                <h4 class="sidebar__head">Teachers</h4>
+                <main class="main">
+                    <div class="aside">
+                     <button class="btn button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Yangisini qo'shish</button>
+                     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                       <div class="offcanvas-header">
+                         <h5 class="button__head" id="offcanvasRightLabel">Yangi foydalanuvchi qo'shish</h5>
+                         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                       </div>
+                       <div class="offcanvas-body">
+                         <form action="/admin" enctype="application/x-www-form-urlencoded" method="POST">
+                             <div class="input__wrapp">
+                                 <label class="form__label" for="">Ismi</label>
+                                 <input class="form__input" type="text" placeholder="name" name="username">
+                             </div>
+                             <div class="input__wrapp">
+                                 <label class="form__label" for="">Telfon raqami</label>
+                                 <input class="form__input" type="text" placeholder="phone number" name="phoneNumber">
+                             </div>
+                             <div class="input__wrapp">
+                                <label class="form__label" for="">Password</label>
+                                <input class="form__input" type="text" placeholder="password" name="password">
+                            </div>
+                             <h4 class="select__head">Kursni tanlang</h4>
+                             <select class="select" name="courseName" >
+                                 <% for (i of courses ) { %>
+                                    <option value=" <%= i.courseName %>"><%= i.courseName %></option>
+                                  <% } %>                            
+                             </select>
+                             <button type="submit" class="btn1">Submit</button>
+                         </form>
+                       </div>
+                     </div>
+                    </div>
+                </main>
+                
+            </div>
+            <div class="sidebar__box">
+
+                <div class="sidebar">
+                    <ul class="sidebar__list">
+                        <li class="sidebar__item">id</li>
+                        <li class="sidebar__item">Name</li>
+                        <li class="sidebar__item">Course</li>
+                        <li class="sidebar__item">Phone number</li>
+                    </ul>
+                </div>
+                <div class="teachers__box">
+                    <% for( let i of foundTeacher ) { %>
+                        
+                        <div class="teachers">
+                            <div class="techer__id"><%= i.id %></div>
+                            <h4 class="teacher__name"><%= i.username %></h4>
+                            <h4 class="teacher__name"><%= i.courseName %></h4>
+                            <p class="teacher__number"><%= i.phoneNumber %> </p>
+                        </div>
+    
+                    <% } %>
+                </div>
+            </div>
+        </div> <!-- end of list TEACHERS -->
+
+        <!-- pupils -->
+        <div class="students-list none">
+        <div class="box">
+            <h4 class="sidebar__head">Pupils</h4>
+           <main class="main">
+            <div class="aside">
+             <button class="btn button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight2" aria-controls="offcanvasRight">Yangi pupil qo'shish</button>
+
+             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight2" aria-labelledby="offcanvasRightLabel">
+               <div class="offcanvas-header">
+                 <h5 class="button__head" id="offcanvasRightLabel">Yangi o'quvchi qo'shish</h5>
+                 <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+               </div>
+               <div class="offcanvas-body">
+                 <form action="/adminP" method="POST" enctype="application/x-www-form-urlencoded">
+                     <div class="input__wrapp">
+                         <label class="form__label" for="">Name</label>
+                         <input class="form__input" type="text" placeholder="Name" name="username">
+                     </div>
+                     <div class="input__wrapp">
+                        <label class="form__label" for="">Password</label>
+                        <input class="form__input" type="text" placeholder="password" name="password">
+                    </div>
+                     <div class="input__wrapp">
+                        <label class="form__label" for="">Number</label>
+                        <input class="form__input" type="text" placeholder="number" name="phoneNumber">
+                    </div>
+                      <h4 class="form__label">Course name</h4>
+                    <select class="selecter__select" id="selecterS" name="course">
+                        <% for (i of groups ) { %>
+                            <option value=" <%= i.courseName %>"><%= i.courseName %></option>
+                        <% } %>                  
+                    </select>
+                    <h4 class="form__label">Group  name</h4>
+                    <select class="selecter__select2" id="optionG" name="groupName">
+                                           
+                    </select>
+                     <button type="submit" class="btn1">Submit</button>
+                 </form>
+               </div>
+             </div>
+            </div>
+        </main>
+     </div>
+     <div class="Pupils">
+        <ul class="pupils__list">
+            <li class="pupil__id">Id</li>
+            <li class="pupil__name">Name</li>
+            <li class="pupil__number">Phone number</li>
+            <li class="pupil__group">Group</li>
+        </ul>
+    </div>
+    <div class="group__box">
+        <% for( let i of foundPupil ) { %>
+            
+            <div class="groups">
+                <div class="id"><%= i.id %></div>
+                <h4 class="group__name2"><%= i.username %></h4>
+                <p class="pupil__number"><%= i.phoneNumber %> </p>
+                <div class="group__teacher"><%= i.groupName %></div>
+            </div>
+
+        <% } %>
+    </div> 
+    </div> <!-- end of list PUPILS -->
+
+
+    <!-- groups page  -->
+
+       <div class="groups-list none">
+        <div class="box">
+            <h4 class="sidebar__head">Groups</h4>
+           <main class="main">
+            <div class="aside">
+             <button class="btn button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight3" aria-controls="offcanvasRight">Yang guruh qo'shish</button>
+
+             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight3" aria-labelledby="offcanvasRightLabel">
+               <div class="offcanvas-header">
+                 <h5 class="button__head" id="offcanvasRightLabel">Yangi guruh qo'shish</h5>
+                 <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+               </div>
+               <div class="offcanvas-body">
+                 <form action="/adminG" method="POST" enctype="application/x-www-form-urlencoded">
+                     <div class="input__wrapp">
+                         <label class="form__label" for="">Group name</label>
+                         <input class="form__input"  type="text" placeholder="group name" name="groupName">
+                     </div>
+                     <h4 class="h4">choose course </h4>
+                     <select class="selecter" name="courseName">
+                        <% for (i of courses ) { %>
+                            <option value=" <%= i.courseName %>"><%= i.courseName %></option>
+                        <% } %>                    
+                    </select>
+                     <h4 class="h4">choose teacher</h4>
+                    <select class="select__teacher" name="username" >
+                           
+                    </select>
+                     <button type="submit" class="btn1">Submit</button>
+                 </form>
+               </div>
+             </div>
+            </div>
+        </main>
+     </div>
+        <div class="sidebar__box">
+
+            <div class="sidebar">
+                <ul class="sidebar__list">
+                    <li class="sidebar__item">Group name</li>
+                    <li class="sidebar__item">Course name</li>
+                    <li class="sidebar__item">Teacher</li>
+                    <!-- <li class="sidebar__item">Homework</li> -->
+                </ul>
+            </div>
+            <div class="group__box">
+                <% for( let i of groups ) { %>
+                    
+                    <div class="groups">
+                        <h4 class="group__name"><%= i.groupName %></h4>
+                        <p class="course2__name"><%= i.courseName %> </p>
+                        <div class="group__teacher"><%= i.username %></div>
+                    </div>
+    
+                <% } %>
+            </div>
+        </div>  <!--end of sidebar box-->
+       </div>
+
+
+       <!-- courses page -->
+
+
+       <div class="courses-list none">
+        <div class="box">
+            <h1 class="headerim">Courses</h1>
+           <main class="main">
+            <div class="aside">
+             <button class="btn button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight4" aria-controls="offcanvasRight">Yangi course qo'shish</button>
+             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight4" aria-labelledby="offcanvasRightLabel">
+               <div class="offcanvas-header">
+                 <h5 class="button__head" id="offcanvasRightLabel">Yangi course qo'shish</h5>
+                 <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+               </div>
+               <div class="offcanvas-body">
+                 <form action="/adminC" method="POST" enctype="application/x-www-form-urlencoded">
+                     <div class="input__wrapp">
+                         <label class="form__label" for="">Course name</label>
+                         <input class="form__input" type="text" placeholder="course name" name="courseName">
+                     </div>
+                     <div class="input__wrapp">
+                         <label class="form__label" for="">Teacher</label>
+                         <input class="form__input" type="text" placeholder="teacher" name="teacher">
+                     </div>
+                     <div class="input__wrapp">
+                         <label class="form__label" for="">Description</label>
+                         <textarea class="form__input" name="title" cols="30" rows="10"></textarea>
+                     </div>
+                     <div class="input__wrapp">
+                         <label class="form__label" for="">Corse price</label>
+                         <input class="form__input" type="number" name="price" placeholder="price">
+                     </div>
+                     <button type="submit" class="btn1">Submit</button>
+                 </form>
+               </div>
+             </div>
+            </div>
+        </main>
+    </div>
+    <div class="course__wrapper">     
+       
+        <% for (let i of courses) { %>
+
+          <div class="course">
+             <h4 class="course__name"><%= i.courseName %></h4>
+             <h6 class="course__teacher"><%= i.teacher %></h6>
+             <p class="course__title"><%= i.title %></p>
+             <pre class="corse__price">Cost: <%= i.price %></pre>
+          </div>
+
+        <% } %> 
+       </div>
+
+        </div>
+    </section>
+    <script src="js/index.js"></script>
+</body>
+</html>
